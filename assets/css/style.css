@@ -10485,7 +10485,7 @@ div#featured-project-carousel {
     .rn-nav-list {
       margin-top: 0; } }
   .rn-nav-list .nav-item {
-    flex-basis: 25%;
+    flex-basis: 50%;
     text-align: center;
     margin-top: 0; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -14644,3 +14644,4 @@ body.white-version {
   color: var(--color-white) !important; }
 
 
+   
