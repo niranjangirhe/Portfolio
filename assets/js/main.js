@@ -424,3 +424,26 @@
 
 
 })(jQuery, window)
+
+
+var body = document.querySelector("body")
+var theme = document.getElementById("theme")
+  function goLight() { // Creates a function called goLight that adds the 'dark' class to the body
+    body.className = "template-color-1 spybody white-version";
+    theme.innerHTML = `<i class="fa-solid fa-moon fa-lg p-2"></i>Dark Mode`;
+    theme.setAttribute("onclick", "goDark()");
+    localStorage.setItem("theme", "light");
+  }
+  function goDark() { // Creates a function called goDark that removes the 'dark' class from the body
+    body.className = "template-color-1 spybody dark-version";
+    theme.innerHTML = `<i class="fa-solid fa-sun fa-lg p-2"></i>Light Mode`;
+    theme.setAttribute("onclick", "goLight()");
+    localStorage.setItem("theme", "dark");
+  }
+
+  if(localStorage.getItem("theme") == "light"){
+    goLight();
+  }
+    else{
+    goDark();
+  }
