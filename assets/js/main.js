@@ -433,12 +433,15 @@ var theme = document.getElementById("theme")
     theme.innerHTML = `<i class="fa-solid fa-moon fa-lg p-2"></i>Dark Mode`;
     theme.setAttribute("onclick", "goDark()");
     localStorage.setItem("theme", "light");
+    document.getElementById("googlescholar").style.filter="invert(10%)"
+    
   }
   function goDark() { // Creates a function called goDark that removes the 'dark' class from the body
     body.className = "template-color-1 spybody dark-version";
     theme.innerHTML = `<i class="fa-solid fa-sun fa-lg p-2"></i>Light Mode`;
     theme.setAttribute("onclick", "goLight()");
     localStorage.setItem("theme", "dark");
+    document.getElementById("googlescholar").style.filter="invert(90%)"
   }
 
   if(localStorage.getItem("theme") == "light"){
