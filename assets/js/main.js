@@ -448,9 +448,9 @@ function goDark() { // Creates a function called goDark that removes the 'dark' 
     document.getElementById("googlescholar").style.filter = "invert(90%)"
 }
 
-if (localStorage.getItem("theme") == "light") {
-    goLight();
+if (localStorage.getItem("theme") == "dark") {
+    goDark();
 }
 else {
-    goDark();
+    goLight();
 }
