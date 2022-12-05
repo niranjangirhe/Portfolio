@@ -24,7 +24,7 @@ function otu()
 
     project.innerHTML+=link("http://www.sqrlab.ca/threaded-paws/")
     github.innerHTML+=link("https://github.com/seer-lab/Threaded-Paws")
-    certificate.innerHTML+=`<a color:blue; target="_blank" href="./certificate/Certificate of Completion - Girhe (1).pdf">Link</a>`
+    certificate.innerHTML+=`<a style="color:blue;" target="_blank" href="./certificate/Certificate of Completion - Girhe (1).pdf">Link</a>`
 }
 
 
@@ -38,7 +38,7 @@ function mitaoe()
 
     project.innerHTML+=link("https://openelective.mitaoe.ac.in/index.html")
     github.innerHTML+=link("https://github.com/open-elective/open-elective")
-    certificate.innerHTML+=`<a color:blue; target="_blank" href="./certificate/MITAOE web internship.pdf">Link</a>`
+    certificate.innerHTML+=`<a style="color:blue;" target="_blank" href="./certificate/MITAOE web internship.pdf">Link</a>`
 }
 
 function salvation()
@@ -50,7 +50,7 @@ function salvation()
 
     project.style.display='none'
     github.style.display='none'
-    certificate.innerHTML+=`<a color:blue; target="_blank" href="./certificate/Game Dev Internship.pdf">Link</a>`
+    certificate.innerHTML+=`<a style="color:blue;" target="_blank" href="./certificate/Game Dev Internship.pdf">Link</a>`
 }
 
 function link(str)
