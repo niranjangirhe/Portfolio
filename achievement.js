@@ -44,5 +44,5 @@ function sih()
 
 function link(str)
 {
-    return `<a style="word-wrap:break-word;" target="_blank" href="`+str+`">`+str+`</a>`
+    return `<a style="word-wrap:break-word; color:blue;" target="_blank" href="`+str+`">`+str+`</a>`
 }
