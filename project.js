@@ -81,5 +81,5 @@ function splitit()
 
 function link(str)
 {
-    return `<a target="_blank" href="`+str+`">`+str+`</a>`
+    return `<a style="word-wrap:break-word; color:blue;" target="_blank" href="`+str+`">`+str+`</a>`
 }
