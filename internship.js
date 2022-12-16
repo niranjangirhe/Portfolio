@@ -4,6 +4,8 @@ var details = document.getElementById("details")
 var project = document.getElementById("project");
 var github = document.getElementById("github");
 var certificate = document.getElementById("certificate");
+var vid = document.getElementById("vid");
+var vidcontainer = document.getElementById("vidcontainer");
 
 switch(window.location.href.toString().split('#')[1]){
     case "otu": otu(); break;
@@ -30,6 +32,8 @@ function otu()
 
 function mitaoe()
 {
+    vidcontainer.style.display='block'
+    vid.src="https://www.youtube.com/embed/K-yaJgQOyOU"
     title.innerHTML="Web-Based Elective Allocation System"
     heading.innerHTML = "MIT Academy of Engineering";
     details.innerHTML =`• Automatization of the manual elective allocation process<br>

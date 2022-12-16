@@ -4,6 +4,8 @@ var details = document.getElementById("details")
 var project = document.getElementById("project");
 var github = document.getElementById("github");
 var paper = document.getElementById("paper");
+var vid = document.getElementById("vid");
+var vidcontainer = document.getElementById("vidcontainer");
 
 switch(window.location.href.toString().split('#')[1]){
     case "sts": sts(); break;
@@ -57,6 +59,8 @@ function nganime()
 
 function tech()
 {
+    vidcontainer.style.display='block'
+    vid.src="https://www.youtube.com/embed/JnKX9F0RtuI"
     title.innerHTML="Killing Tech"
     heading.innerHTML = "Indie Multiplayer PC and Mobile Game";
     details.innerHTML =`• Developed 3D FPS multiplayer game using unity and blender<br>
