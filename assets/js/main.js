@@ -428,25 +428,65 @@
 
 var body = document.querySelector("body")
 var theme = document.getElementsByClassName("theme")
-function goLight() { // Creates a function called goLight that adds the 'dark' class to the body
+var count=5;
+var audio = document.getElementById("music")
+var discoCount = count;
+var in1,in2;
+
+function goLight(c) { // Creates a function called goLight that adds the 'dark' class to the body
+    if(c==1 && discoCount==-1)
+    {
+        discoCount=count;
+        clearInterval(in1);
+        clearInterval(in2)
+        audio.load()
+
+    }
+    console.log(discoCount)
     body.className = "template-color-1 spybody white-version";
     for (var i = 0; i < theme.length; i++) {
         theme[i].innerHTML = `<i class="fa-solid fa-moon fa-lg p-2"></i>Dark Mode`;
-        theme[i].setAttribute("onclick", "goDark()");
+        theme[i].setAttribute("onclick", "goDark(1)");
     }
     localStorage.setItem("theme", "light");
     document.getElementById("googlescholar").style.filter = "invert(10%)"
+    if(discoCount>0)
+        discoCount--;
+    else if(discoCount==0)
+        discomode();
 
 }
-function goDark() { // Creates a function called goDark that removes the 'dark' class from the body
+function goDark(c) { // Creates a function called goDark that removes the 'dark' class from the body
+    if(c==1 && discoCount==-1)
+    {
+        discoCount=count;
+        clearInterval(in1);
+        clearInterval(in2)
+        audio.load()
+    }
+    console.log(discoCount)
     body.className = "template-color-1 spybody dark-version";
     for (var i = 0; i < theme.length; i++) {
         theme[i].innerHTML = `<i class="fa-solid fa-sun fa-lg p-2"></i>Light Mode`;
-        theme[i].setAttribute("onclick", "goLight()");
+        theme[i].setAttribute("onclick", "goLight(1)");
     }
     localStorage.setItem("theme", "dark");
     document.getElementById("googlescholar").style.filter = "invert(90%)"
+    if(discoCount>0)
+        discoCount--;
+    else if(discoCount==0)
+        discomode();
 }
+
+
+function discomode(){
+    
+    audio.play();
+    discoCount=-1
+    in1=setInterval(function() { goLight(0) },1000)
+    setTimeout( function() { in2=setInterval(function() { goDark(0) },1000) }, 500);
+}
+
 
 if (localStorage.getItem("theme") == "dark") {
     goDark();
