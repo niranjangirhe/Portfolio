@@ -450,6 +450,7 @@ function goLight(c) { // Creates a function called goLight that adds the 'dark' 
     }
     localStorage.setItem("theme", "light");
     document.getElementById("googlescholar").style.filter = "invert(10%)"
+    document.getElementById("googlescholar2").style.filter = "invert(10%)"
     if(discoCount>0)
         discoCount--;
     else if(discoCount==0)
@@ -472,6 +473,7 @@ function goDark(c) { // Creates a function called goDark that removes the 'dark'
     }
     localStorage.setItem("theme", "dark");
     document.getElementById("googlescholar").style.filter = "invert(90%)"
+    document.getElementById("googlescholar2").style.filter = "invert(90%)"
     if(discoCount>0)
         discoCount--;
     else if(discoCount==0)
