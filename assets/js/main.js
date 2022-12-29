@@ -489,6 +489,17 @@ function discomode(){
     setTimeout( function() { in2=setInterval(function() { goDark(0) },1000) }, 500);
 }
 
+function hideLoader() {
+    const e = document.getElementById("loader");
+    e.style.animation = "fadeinout 2s linear forwards"
+    e.addEventListener("animationend", (ev) => {
+        if (ev.type === "animationend") {
+            e.style.display = "none";
+            e.style.zIndex = -1;
+        }
+    }, false);
+}
+
 
 if (localStorage.getItem("theme") == "dark") {
     goDark();

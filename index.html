@@ -2,197 +2,8 @@
 <html lang="en">
 
 <head>
-    <style>
-        #loader {
-            position: fixed;
-            z-index: 1000;
-            width: 100%;
-            height: 100vh;
-        }
 
 
-        fadeinout-animate {
-            width: 200px;
-            height: 200px;
-            opacity: 0;
-        }
-
-        @keyframes fadeinout {
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        svg.tea {
-            --secondary: #FC4520;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        svg.tea #teabag {
-            transform-origin: top center;
-            transform: rotate(3deg);
-            animation: swing 2s infinite;
-        }
-
-        svg.tea #steamL {
-            stroke-dasharray: 13;
-            stroke-dashoffset: 13;
-            animation: steamLarge 2s infinite;
-        }
-
-        svg.tea #steamR {
-            stroke-dasharray: 9;
-            stroke-dashoffset: 9;
-            animation: steamSmall 2s infinite;
-        }
-
-        @-moz-keyframes swing {
-            50% {
-                transform: rotate(-3deg);
-            }
-        }
-
-        @-webkit-keyframes swing {
-            50% {
-                transform: rotate(-3deg);
-            }
-        }
-
-        @-o-keyframes swing {
-            50% {
-                transform: rotate(-3deg);
-            }
-        }
-
-        @keyframes swing {
-            50% {
-                transform: rotate(-3deg);
-            }
-        }
-
-        @-moz-keyframes steamLarge {
-            0% {
-                stroke-dashoffset: 13;
-                opacity: 0.6;
-            }
-
-            100% {
-                stroke-dashoffset: 39;
-                opacity: 0;
-            }
-        }
-
-        @-webkit-keyframes steamLarge {
-            0% {
-                stroke-dashoffset: 13;
-                opacity: 0.6;
-            }
-
-            100% {
-                stroke-dashoffset: 39;
-                opacity: 0;
-            }
-        }
-
-        @-o-keyframes steamLarge {
-            0% {
-                stroke-dashoffset: 13;
-                opacity: 0.6;
-            }
-
-            100% {
-                stroke-dashoffset: 39;
-                opacity: 0;
-            }
-        }
-
-        @keyframes steamLarge {
-            0% {
-                stroke-dashoffset: 13;
-                opacity: 0.6;
-            }
-
-            100% {
-                stroke-dashoffset: 39;
-                opacity: 0;
-            }
-        }
-
-        @-moz-keyframes steamSmall {
-            10% {
-                stroke-dashoffset: 9;
-                opacity: 0.6;
-            }
-
-            80% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-
-            100% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-        }
-
-        @-webkit-keyframes steamSmall {
-            10% {
-                stroke-dashoffset: 9;
-                opacity: 0.6;
-            }
-
-            80% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-
-            100% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-        }
-
-        @-o-keyframes steamSmall {
-            10% {
-                stroke-dashoffset: 9;
-                opacity: 0.6;
-            }
-
-            80% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-
-            100% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-        }
-
-        @keyframes steamSmall {
-            10% {
-                stroke-dashoffset: 9;
-                opacity: 0.6;
-            }
-
-            80% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-
-            100% {
-                stroke-dashoffset: 27;
-                opacity: 0;
-            }
-        }
-    </style>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Niranjan Girhe</title>
@@ -201,6 +12,7 @@
 
     <!-- CSS 
     ============================================ -->
+    <link rel="stylesheet" href="assets/css/plugins/loader.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/vendor/slick.css">
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
@@ -264,7 +76,7 @@
                         <!-- Start Mainmanu Nav -->
                         <ul class="primary-menu nav nav-pills">
                             <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Skills</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a>
                             </li>
@@ -312,7 +124,7 @@
             <div class="content">
                 <ul class="primary-menu nav nav-pills onepagenav">
                     <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Skills</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
@@ -684,7 +496,7 @@
                     <div class="col-lg-12">
                         <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500"
                             data-aos-delay="100" data-aos-once="true">
-                            <span class="subtitle">Features</span>
+                            <span class="subtitle">Skills</span>
                             <h2 class="title">My Stack of Skillset</h2>
                         </div>
                     </div>
@@ -1728,19 +1540,6 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-    </script>
-
-    <script>
-        function hideLoader() {
-            const e = document.getElementById("loader");
-            e.style.animation = "fadeinout 2s linear forwards"
-            e.addEventListener("animationend", (ev) => {
-                if (ev.type === "animationend") {
-                    e.style.display = "none";
-                    e.style.zIndex = -1;
-                }
-            }, false);
-        }
     </script>
 </body>
 
