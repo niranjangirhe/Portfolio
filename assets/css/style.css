@@ -12010,7 +12010,7 @@ div#featured-project-carousel {
       width: 61px;
       height: 61px;
       line-height: 57px;
-      margin-right: 15px;
+      margin: 0px 15px 15px 0px;
       box-shadow: var(--shadow-1);
       border-radius: 6px;
       transition: var(--transition);
