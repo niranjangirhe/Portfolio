@@ -7,11 +7,11 @@ html {
     pointer-events: none;
     top: 50%;
     left: 50%;
-    z-index: 500;
+    z-index: 1000;
 }
 
 #follower #circle1 {
-    z-index: 500;
+    z-index: 1000;
     position: fixed;
     pointer-events: none;
     -webkit-animation: pulse 2s infinite;
@@ -26,7 +26,7 @@ html {
 }
 
 #follower #circle2 {
-    z-index: 500;
+    z-index: 1000;
     position: fixed;
     -webkit-animation: pulse 4s infinite;
     /* Chrome, Safari, Opera */
@@ -42,7 +42,7 @@ html {
     margin-left: 0em;
 }
 #follower #circle3 {
-    z-index: 500;
+    z-index: 1000;
     position: fixed;
     /* Chrome, Safari, Opera */
     background: #fff;
