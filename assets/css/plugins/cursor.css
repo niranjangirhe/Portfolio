@@ -1,3 +1,5 @@
+/* 
+
 html {
     cursor: none !important;
 }
@@ -15,7 +17,6 @@ html {
     position: fixed;
     pointer-events: none;
     -webkit-animation: pulse 2s infinite;
-    /* Chrome, Safari, Opera */
     animation: pulse 2s infinite;
     background: #fc4520;
     border-radius: 50%;
@@ -29,9 +30,7 @@ html {
     z-index: 1000;
     position: fixed;
     -webkit-animation: pulse 4s infinite;
-    /* Chrome, Safari, Opera */
     animation: pulse 4s infinite;
-    /* background: #fc452036; */
     border-radius: 50%;
     border: #fc4520;
     border-style: solid;
@@ -44,7 +43,6 @@ html {
 #follower #circle3 {
     z-index: 1000;
     position: fixed;
-    /* Chrome, Safari, Opera */
     background: #fff;
     border-radius: 50%;
     height: 10px;
@@ -52,6 +50,11 @@ html {
     margin-top: -5px;
     margin-left: -5px;
 }
+
+.touch #follower {
+    display: none;
+}
+
 
 @-moz-keyframes pulse {
     0% {
@@ -155,4 +158,4 @@ html {
         margin-top: -0.5em;
         margin-left: -0.5em;
     }
-}
+} */
