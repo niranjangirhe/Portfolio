@@ -37,7 +37,7 @@ function sih()
     details.innerHTML =`• Awarded with prize money of 100,000 INR<br>
     • Developed web-portal for online labor complaint handling`
 
-    project.innerHTML+="http://server.girhe.com:4001/"
+    project.innerHTML+=link("http://server.girhe.com:4001/")
     github.innerHTML+=link("https://github.com/Team-Yukti/Backend")
     image.src='/assets/images/sih.jpeg'
 }
