@@ -14,9 +14,19 @@ switch(window.location.href.toString().split('#')[1]){
     case "tech": tech(); break;
     case "splitit": splitit(); break;
     case "ngtube": ngtube(); break;
+    case "imagen": imagen(); break;
     default : window.location.href = "https://girhe.com"; break;
 }
 
+function imagen()
+{
+    title.innerHTML="Imagen - Image to ASCII art converter"
+    heading.innerHTML = "Deep Learning & Computer Vision";
+    details.innerHTML =`• Developed a Text to Imageand Image caption generator (CNN, LSTM).`
+    project.style.display='none'
+    github.style.display='none'
+    paper.style.display='none'
+}
 function ngtube()
 {
     title.innerHTML="NGTube - A app to reduce youtube addiction"
