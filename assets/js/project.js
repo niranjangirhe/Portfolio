@@ -20,11 +20,11 @@ switch(window.location.href.toString().split('#')[1]){
 
 function imagen()
 {
-    title.innerHTML="Imagen - Image to ASCII art converter"
+    title.innerHTML="Imagen - Text to Image and Image Caption Generator"
     heading.innerHTML = "Deep Learning & Computer Vision";
     details.innerHTML =`• Developed a Text to Imageand Image caption generator (CNN, LSTM).`
-    project.style.display='none'
-    github.style.display='none'
+    project.innerHTML+='Will update soon'
+    github.innerHTML+='Will update soon'
     paper.style.display='none'
 }
 function ngtube()
