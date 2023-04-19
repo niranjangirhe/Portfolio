@@ -8,6 +8,7 @@ var image = document.getElementById("image");
 switch(window.location.href.toString().split('#')[1]){
     case "uia": uia(); break;
     case "sih": sih(); break;
+    case "MAEstro": MAEstro(); break;
     default : window.location.href = "https://girhe.com"; break;
 }
 
@@ -40,6 +41,20 @@ function sih()
     project.innerHTML+=link("http://server.girhe.com:4001/")
     github.innerHTML+=link("https://github.com/Team-Yukti/Backend")
     image.src='/assets/images/sih.jpeg'
+}
+
+function MAEstro()
+{
+    title.innerHTML="MAEstro"
+    heading.innerHTML = "Awarded";
+    details.innerHTML =`• Recognizes as best outgoing student of the year 2023<br>
+    • Received prize money of 10,000 INR<br>`
+    image.src='/assets/images/MAEstro_img.jpg'
+    image.style.scale="2";
+
+    project.innerHTML = "Certificate: "+`<a style="word-wrap:break-word; color:blue;" target="_blank" href="/assets/images/MAEstro.jpg">Link</a>`;
+    github.style.display="none";
+
 }
 
 function link(str)
