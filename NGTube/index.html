@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transcript</title>
-</head>
-<body>
-    <meta http-equiv="refresh" content="0; url=../assets/apk/NGTube.apk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NG Tube</title>
+  </head>
+  <body>
+    <meta http-equiv="refresh" content="0; url=../assets/apk/NGTube.apk" />
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBk-HFdOv1cuzcwhhBGH4R_W8TuRrZvxI8",
-          authDomain: "niranjangirhe.firebaseapp.com",
-          projectId: "niranjangirhe",
-          storageBucket: "niranjangirhe.appspot.com",
-          messagingSenderId: "160692957333",
-          appId: "1:160692957333:web:d8099c32eaf9d77862eb9c",
-          measurementId: "G-3J72Q1J55J"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        analytics.logEvent('Transcript', { name: 'Transcript'});
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-      </script>
-</body>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBk-HFdOv1cuzcwhhBGH4R_W8TuRrZvxI8",
+        authDomain: "niranjangirhe.firebaseapp.com",
+        projectId: "niranjangirhe",
+        storageBucket: "niranjangirhe.appspot.com",
+        messagingSenderId: "160692957333",
+        appId: "1:160692957333:web:d8099c32eaf9d77862eb9c",
+        measurementId: "G-3J72Q1J55J",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      analytics.logEvent("Transcript", { name: "Transcript" });
+    </script>
+  </body>
 </html>
